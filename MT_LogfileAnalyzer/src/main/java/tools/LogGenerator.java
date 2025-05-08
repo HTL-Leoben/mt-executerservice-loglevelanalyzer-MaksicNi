@@ -224,6 +224,10 @@ public class LogGenerator {
         int minKB = 10;
         int maxKB = 100;
 
+        new LogGenerator(5, "testA", LocalDate.now().minusDays(4), 10, 20).generateLogs();
+        new LogGenerator(7, "testB", LocalDate.now().minusDays(10), 50, 100).generateLogs();
+        new LogGenerator(3, "testC", LocalDate.now().minusDays(20), 200, 300).generateLogs();
+
         // --- Argument-Verarbeitung ---
         // Verwendung: java LogGenerator [anzahlTage] [prefix] [startDate YYYY-MM-DD] [minKB] [maxKB]
         try {
